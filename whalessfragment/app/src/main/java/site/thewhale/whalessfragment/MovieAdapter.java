@@ -1,6 +1,7 @@
 package site.thewhale.whalessfragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,6 +38,14 @@ public class MovieAdapter extends RecyclerView.Adapter {
         ((ViewHolder) holder).name.setText(movieList.get(position).getName());
         ((ViewHolder) holder).duration.setText(movieList.get(position).getDuration());
         ((ViewHolder) holder).img.setImageResource(movieList.get(position).getImg());
+        ((ViewHolder) holder).view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(contect, Details.class);
+                i.putExtra("movie", movieList.get(position));
+                contect.startActivity(i);
+            }
+        });
     }
 
     @Override

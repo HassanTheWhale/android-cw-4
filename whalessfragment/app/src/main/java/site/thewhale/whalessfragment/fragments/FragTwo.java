@@ -30,7 +30,6 @@ public class FragTwo extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-
         ArrayList<Movie> moviesArrayList2 = new ArrayList<Movie>();
         moviesArrayList2.add(
                 new Movie("The Avengers ", R.drawable.aven,
@@ -62,7 +61,7 @@ public class FragTwo extends Fragment {
         RecyclerView.LayoutManager lm = new LinearLayoutManager(view.getContext());
         recyclerView.setLayoutManager(lm);
 
-        MovieAdapter movieAdapter = new MovieAdapter(moviesArrayList, view.getContext());
+        MovieAdapter movieAdapter = new MovieAdapter(moviesArrayList2, view.getContext());
         recyclerView.setAdapter(movieAdapter);
 
         return view;
