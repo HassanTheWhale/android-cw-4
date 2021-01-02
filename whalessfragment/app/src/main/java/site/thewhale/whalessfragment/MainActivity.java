@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         FragAdapter fragAdapter = new FragAdapter(getSupportFragmentManager());
         vp.setAdapter(fragAdapter);
+        vp.setCurrentItem(3, true);
 
         tl.getTabAt(0).setIcon(R.drawable.ic_baseline_star_24);
         tl.getTabAt(1).setIcon(R.drawable.ic_baseline_sports_kabaddi_24);
