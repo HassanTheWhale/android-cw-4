@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+import site.thewhale.whalessfragment.MainActivity;
 import site.thewhale.whalessfragment.Movie;
 import site.thewhale.whalessfragment.MovieAdapter;
 import site.thewhale.whalessfragment.R;
@@ -61,7 +62,7 @@ public class FragTwo extends Fragment {
         RecyclerView.LayoutManager lm = new LinearLayoutManager(view.getContext());
         recyclerView.setLayoutManager(lm);
 
-        MovieAdapter movieAdapter = new MovieAdapter(moviesArrayList2, view.getContext());
+        MovieAdapter movieAdapter = new MovieAdapter(moviesArrayList2, view.getContext(), (MainActivity) getActivity());
         recyclerView.setAdapter(movieAdapter);
 
         return view;

@@ -82,4 +82,14 @@
         android:layout_marginEnd="12dp"
         app:srcCompat="@drawable/arrow" />
 
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="153dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/start"
+        app:srcCompat="@drawable/ic_baseline_delete_24" />
+
 </RelativeLayout>
