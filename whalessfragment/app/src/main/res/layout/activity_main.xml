@@ -7,10 +7,18 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/vp"
         android:layout_width="match_parent"
-        android:layout_height="650dp">
+        android:layout_height="640dp">
 
     </androidx.viewpager.widget.ViewPager>
 
@@ -39,4 +47,5 @@
             android:layout_height="wrap_content"
             android:text="Add" />
     </com.google.android.material.tabs.TabLayout>
+
 </LinearLayout>
